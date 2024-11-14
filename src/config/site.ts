@@ -2,10 +2,10 @@ import { env } from "~/env";
 
 export const siteConfig = {
   name: "scoop",
-  title: "Scoop - 10-Second AI Sports Updates for Busy Fans",
+  title: "scoop - 10 second AI sports updates for busy fans",
   description:
     "Get personalized AI-powered sports summaries in 10 seconds. Stay updated on NBA, NFL, MLB, NHL, and FIFA without the time commitment. Perfect for busy sports fans.",
-  shortDescription: "AI-powered sports summaries for busy fans",
+  shortDescription: "10-second AI sports summaries for busy fans",
   altShortDescription: "10-second sports updates for busy fans",
   url: env.URL,
   ogImage: "/src/app/opengraph-image.png",
