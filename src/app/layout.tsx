@@ -25,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={GeistSans.variable}>
       <body className="min-h-screen bg-[#2A1810] text-white">
         <Nav />
         <div className="mx-auto max-w-7xl px-4 pt-32">{children}</div>
