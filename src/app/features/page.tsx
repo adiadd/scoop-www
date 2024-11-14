@@ -1,11 +1,13 @@
 import {
   Brain,
   Clock,
+  Construction,
   Globe,
   Laptop,
   Smartphone,
   UserCircle,
 } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert";
 
 export const metadata = {
   title: "features",
@@ -16,6 +18,14 @@ export default function FeaturesPage() {
   return (
     <div>
       <section className="space-y-6 py-20">
+        <Alert>
+          <Construction className="h-4 w-4" />
+          <AlertTitle>work in progress</AlertTitle>
+          <AlertDescription>
+            heads up: these features are evolving as we build. check back for
+            updates.
+          </AlertDescription>
+        </Alert>
         <h1 className="font-mono text-4xl font-bold sm:text-6xl">
           your personalized sports digest in 10 seconds
         </h1>
