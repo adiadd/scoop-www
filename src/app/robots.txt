@@ -1,0 +1,16 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://scoop.agnilabs.xyz/sitemap.xml
+
+# Allow social media crawlers with higher priority
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
