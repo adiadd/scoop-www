@@ -2,7 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
-import Nav from "~/components/nav";
+import Nav from "~/components/layout/nav";
 import { siteConfig } from "~/config/site";
 
 export const metadata: Metadata = {

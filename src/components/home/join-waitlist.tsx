@@ -1,4 +1,4 @@
-import TallyForm from "./tally-form";
+import TallyForm from "../forms/tally-form";
 
 export default function JoinWaitlist() {
   return (
