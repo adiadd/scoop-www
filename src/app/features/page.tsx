@@ -7,6 +7,11 @@ import {
   UserCircle,
 } from "lucide-react";
 
+export const metadata = {
+  title: "features",
+  description: "features of scoop",
+};
+
 export default function FeaturesPage() {
   return (
     <div>

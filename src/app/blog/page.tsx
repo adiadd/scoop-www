@@ -1,5 +1,10 @@
 import Particles from "~/components/ui/particles";
 
+export const metadata = {
+  title: "blog",
+  description: "news and updates from scoop",
+};
+
 export default function BlogPage() {
   return (
     <div className="relative">
