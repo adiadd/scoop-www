@@ -3,23 +3,9 @@ import "~/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import Nav from "~/components/layout/nav";
-import { siteConfig } from "~/config/site";
+import { siteMetadata } from "~/lib/metadata";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.name,
-    template: `%s / ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  openGraph: {
-    siteName: siteConfig.name,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    url: siteConfig.url,
-  },
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
-};
+export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
   children,
