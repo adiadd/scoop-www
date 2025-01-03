@@ -1,3 +1,5 @@
+import WaitlistButton from "../ui/waitlist-button";
+
 export default function Hero() {
   return (
     <section className="space-y-6 py-20">
@@ -8,6 +10,7 @@ export default function Hero() {
         ai-powered summaries of what matters in sports, personalized to your
         interests. no fluff, just the highlights.
       </p>
+      <WaitlistButton />
     </section>
   );
 }

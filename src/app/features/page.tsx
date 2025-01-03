@@ -7,6 +7,7 @@ import {
   Smartphone,
   UserCircle,
 } from "lucide-react";
+import JoinWaitlist from "~/components/home/join-waitlist";
 import { Alert, AlertDescription, AlertTitle } from "~/components/ui/alert";
 
 export const metadata = {
@@ -129,6 +130,7 @@ export default function FeaturesPage() {
           </div>
         </div>
       </section>
+      <JoinWaitlist />
     </div>
   );
 }

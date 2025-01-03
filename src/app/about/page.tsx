@@ -1,3 +1,5 @@
+import JoinWaitlist from "~/components/home/join-waitlist";
+
 export const metadata = {
   title: "about",
   description: "about scoop",
@@ -81,6 +83,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <JoinWaitlist />
     </div>
   );
 }

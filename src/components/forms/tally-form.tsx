@@ -1,8 +1,28 @@
 "use client";
 
 import Script from "next/script";
+import { useEffect } from "react";
 
-export default function TallyForm() {
+interface TallyFormProps {
+  onLoad?: () => void;
+}
+
+declare global {
+  interface Window {
+    Tally?: {
+      loadEmbeds: () => void;
+    };
+  }
+}
+
+export default function TallyForm({ onLoad }: TallyFormProps) {
+  useEffect(() => {
+    // Check if Tally is already loaded
+    if (window.Tally) {
+      window.Tally.loadEmbeds();
+    }
+  }, []);
+
   return (
     <>
       <iframe
@@ -12,15 +32,15 @@ export default function TallyForm() {
         height="177"
         style={{ border: 0, margin: 0 }}
         title="join the scoop waitlist"
+        onLoad={onLoad}
       ></iframe>
 
       <Script
         id="tally-js"
         src="https://tally.so/widgets/embed.js"
         onLoad={() => {
-          // @ts-expect-error Tally is not defined in the global scope
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
-          Tally.loadEmbeds();
+          window.Tally?.loadEmbeds();
+          onLoad?.();
         }}
       />
     </>
